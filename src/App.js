@@ -1,19 +1,12 @@
-import React from "react";
-import {
-    BrowserRouter,
-    Routes,
-    Route
-} from "react-router-dom";
+import './styles/App.css'
+import TodoList from './component/TodoList'
 
-import TodoForm from "./component/TodoForm";
-import TodoList from "./component/TodoList";
 function App() {
   return (
-      <BrowserRouter>
-      <TodoList></TodoList>
-      <TodoForm></TodoForm>
-      </BrowserRouter>
-  );
+    <div className="todo-app">
+      <TodoList></TodoList> 
+    </div>
+  )
 }
 
-export default App;
+export default App
